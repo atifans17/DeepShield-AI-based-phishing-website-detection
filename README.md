@@ -29,6 +29,18 @@ Trained and evaluated on a labeled corpus of ~500K benign and phishing URLs, wit
 
 Recall is reported explicitly alongside accuracy because the dataset is imbalanced and missing an actual phishing URL is the more costly error for this use case.
 
+## Model Setup
+
+Due to GitHub's file size constraints for Git trees (>100 MB), the pre-trained model weights (`model.pkl`, ~535 MB) are hosted externally.
+
+1. Download the pre-trained model:
+   - [Download via GitHub Release](https://github.com/atifans17/DeepShield-AI-based-phishing-website-detection/releases/download/v1.0.0/model.pkl)
+   
+
+2. Move the downloaded file into the backend directory:
+   ```bash
+   mv model.pkl backend/
+
 ## Known Limitations
 
 - The model relies on lexical and structural URL features only; it does not inspect live page content, SSL certificate metadata, or domain registration history. This limits detection of phishing sites that mimic legitimate URL structure closely.
@@ -42,14 +54,3 @@ Recall is reported explicitly alongside accuracy because the dataset is imbalanc
 - Add a persistence layer to log and review scan history over time
 
 
-## Model Setup
-
-Due to GitHub's file size constraints for Git trees (>100 MB), the pre-trained model weights (`model.pkl`, ~535 MB) are hosted externally.
-
-1. Download the pre-trained model:
-   - [Download via GitHub Release](https://github.com/atifans17/DeepShield-AI-based-phishing-website-detection/releases/download/v1.0.0/model.pkl)
-   
-
-2. Move the downloaded file into the backend directory:
-   ```bash
-   mv model.pkl backend/
