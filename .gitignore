@@ -3,11 +3,11 @@ backend/venv/
 backend/__pycache__/
 *.pyc
 
-# Data files (often too large / not meant for git)
+
 backend/data/urls_raw.csv
 backend/data/features.csv
 
-# Model files (optional - remove these lines if you want the trained model in the repo)
+
 backend/model.pkl
 backend/feature_names.pkl
 

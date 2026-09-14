@@ -40,3 +40,16 @@ Recall is reported explicitly alongside accuracy because the dataset is imbalanc
 - Add HTML/DOM-based features from live page content
 - Package as a browser extension for pre-load risk scoring
 - Add a persistence layer to log and review scan history over time
+
+
+## Model Setup
+
+Due to GitHub's file size constraints for Git trees (>100 MB), the pre-trained model weights (`model.pkl`, ~535 MB) are hosted externally.
+
+1. Download the pre-trained model:
+   - [Download via GitHub Release](https://github.com/atifans17/DeepShield-AI-based-phishing-website-detection/releases/download/v1.0.0/model.pkl)
+   
+
+2. Move the downloaded file into the backend directory:
+   ```bash
+   mv model.pkl backend/
